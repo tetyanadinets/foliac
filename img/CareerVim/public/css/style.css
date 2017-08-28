@@ -1,0 +1,223 @@
+*{
+	transition: background .3s ease-in, background-color .3s ease-in, opasity .3s ease-in, border .3s ease-in;
+}
+body{
+	font-family: 'Raleway', sans-serif;
+	font-size: 14px;
+	font-weight: 400;
+}
+h1, h2{
+	font-family: 'Lato', sans-serif;
+	font-weight: 700;
+}
+img{
+	max-width: 100%;
+}
+select.pb-form-control{
+	-webkit-border-radius: 0;
+	        border-radius: 0;
+}
+.pb-form-group{
+	margin-bottom: 25px;
+}
+.pb-high{
+	z-index: 3;
+	position: relative;
+}
+
+/*HEADER STYLE No Login*/
+.navbar-default{
+	background-color: #3f95b5;
+	border: none;
+	padding: 30px 0;
+	margin-bottom: 0;
+}
+.navbar-default .navbar-brand, .navbar-default .navbar-brand:hover{
+	font-family: 'Lato', sans-serif;
+	font-size: 32px;
+	font-weight: 700;
+	color: #FFF;
+}
+.navbar-default .navbar-brand span{
+	color: #FFB400;
+}
+.navbar-default .navbar-nav>li>a{
+	color: #FFF;
+	position: relative;
+}
+.navbar-default .navbar-nav>li>a:hover{
+	color: #FFB400;
+}
+.navbar-default .navbar-nav>li:after{
+	content: "|";
+	color: #FFF;
+	position: absolute;
+	right: 0;
+	top: 50%;
+	-webkit-transform: translateY(-50%);
+	   -moz-transform: translateY(-50%);
+	    -ms-transform: translateY(-50%);
+	     -o-transform: translateY(-50%);
+	        transform: translateY(-50%);
+}
+.navbar-default .navbar-nav>li:last-child:after{
+	display: none;
+}
+/*HEADER STYLE LOGIN*/
+.pb-header_login .navbar-default{
+	padding: 15px 0 0;
+}
+.pb-header_login .navbar-default .navbar-nav>li:after{
+	display: none;
+}
+.pb-header_login .navbar-default .navbar-nav>li>a.pb-bell{
+	padding: 5px;
+	margin: 8px;
+	margin-right: 20px;
+	line-height: 1;
+	background-color: #77aec2;
+}
+.pb-header_login .navbar-default .navbar-nav>li>a.pb-bell img{
+	max-width: 15px;
+}
+.pb-header_login .navbar-default .navbar-nav>li>a.pb-profile{
+	padding: 0;
+}
+.pb-header_login .navbar-default .navbar-nav>li>a.pb-profile img{
+	max-width: 40px;
+	border: 1px solid #fff;
+}
+.pb-btn-rounded{
+	padding: 10px 25px;
+	-webkit-border-radius: 40px;
+	        border-radius: 40px;
+	background-color: #50E3C2;
+	color: #FFF;
+	font-size: 14px;
+}
+.pb-btn-rounded:hover{
+	color: #FFF;
+	background: #FFB400;
+}
+.navbar-default .navbar-nav.pb-menu{
+	margin-left: -20px;
+}
+.navbar-default .navbar-nav.pb-menu>li{
+	margin-right: 30px;
+}
+.navbar-default .navbar-nav.pb-menu>li>a{
+	padding: 15px;
+	padding-right: 20px;
+	position: relative;
+}
+.navbar-default .navbar-nav.pb-menu>li>a.active:after,
+.navbar-default .navbar-nav.pb-menu>li>a:hover:after{
+	content: "";
+	position: absolute;
+	bottom: 0;
+	left: 15px;
+	height: 2px;
+	width: 90%;
+	background-color: #FFB400;
+}
+
+/*MAIN SECTION LOGIN/REGITER PAGE*/
+.pb-registration_login{
+	background-image: url('../Content/img/mountainbg.jpg');
+	-webkit-background-size: cover;
+	     -o-background-size: cover;
+	        background-size: cover;
+	padding: 100px 0;
+	min-height: calc(100vh - 110px);
+	position: relative;
+	z-index: 1;
+}
+.pb-registration_login:after, .pb-search:after{
+	content: "";
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	z-index: 2;
+	background-color: #3f95b5;
+	opacity: 0.5;
+}
+.pb-panel{
+	padding: 0;
+	background-color: #EBF0F5;
+	border: none;
+	position: relative;
+	z-index: 3;
+}
+.pb-panel .panel-heading{
+	background-color: #2a719a;
+	color: #fff;
+}
+.pb-form_title{
+	font-size: 26px;
+	font-weight: 700;
+}
+.pb-form_description{
+	font-size: 16px;
+}
+.pb-panel .panel-body{
+	padding: 30px 80px;
+}
+.pb-panel .panel-body p{
+	font-size: 13px;
+	margin-bottom: 30px;
+}
+.pb-panel .panel-body label{
+	font-weight: 400;
+}
+.pb-panel button{
+	width: 100%;
+	border: 1px solid #c65b00;
+}
+
+/*MAIN SECTION SEARCH PAGE*/
+.pb-search{
+	padding: 50px;
+	background-image: url('../Content/img/mountain_search.jpg');
+	-webkit-background-size: cover;
+	     -o-background-size: cover;
+	        background-size: cover;
+	background-position: center;
+	position: relative;
+	z-index: 1;
+}
+.pb-section_title{
+	color: #FFF;
+	padding-bottom: 20px;
+}
+.pb-btn-search{
+	padding: 15px 50px;
+	background-color: #FFB400;
+	font-size: 16px;
+	color: #fff;
+}
+.pb-btn-search:hover{
+	background-color: #50E3C2;
+}
+.pb-job-info{
+	padding: 50px 0;
+}
+.pb-jon-info_title{
+	color: #07a7d1;
+	font-weight: 700;
+	margin-bottom: 30px;
+}
+.pb-jon-info_description{
+	font-size: 16px;
+	margin-bottom: 20px;
+}
+.pb-more{
+	background-color: #606f86;
+	color: #fff;
+	padding: 10px 40px;
+}
+.pb-more:hover{
+	background-color: #50E3C2;
+	color: #FFF;
+}
